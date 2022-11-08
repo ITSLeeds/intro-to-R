@@ -18,6 +18,48 @@
     "href": "materials.html",
     "title": "Course Materials",
     "section": "",
-    "text": "Slides"
+    "text": "schedule\nslides\nReproducible Road Safety Research with R\nopenTransportDataDemo"
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "An introduction to R",
+    "section": "",
+    "text": "background-image: url(https://c1.staticflickr.com/2/1216/1096671706_571a263b63_b.jpg) background-position: 50% 50% class: center, bottom, inverse"
+  },
+  {
+    "objectID": "slides.html#set-up",
+    "href": "slides.html#set-up",
+    "title": "An introduction to R",
+    "section": "Set-up",
+    "text": "Set-up\nSee https://itsleeds.github.io/rrsrr/introduction.html#prerequisites"
+  },
+  {
+    "objectID": "slides.html#why-r",
+    "href": "slides.html#why-r",
+    "title": "An introduction to R",
+    "section": "Why R",
+    "text": "Why R\nGrowth + future proof: https://stackoverflow.blog/2017/10/10/impressive-growth-r/\nScalable: https://www.pct.bike/\n–"
+  },
+  {
+    "objectID": "slides.html#why-not-r",
+    "href": "slides.html#why-not-r",
+    "title": "An introduction to R",
+    "section": "Why not R?",
+    "text": "Why not R?\n\nTime to learn\nOther options are available"
+  },
+  {
+    "objectID": "slides.html#breakout-rooms",
+    "href": "slides.html#breakout-rooms",
+    "title": "An introduction to R",
+    "section": "Breakout rooms",
+    "text": "Breakout rooms\n\nSee https://github.com/ITSLeeds/rintro"
+  },
+  {
+    "objectID": "slides.html#further-resources",
+    "href": "slides.html#further-resources",
+    "title": "An introduction to R",
+    "section": "Further resources",
+    "text": "Further resources\n\nUse R’s internal help, e.g. ?plot\n\nBeginner: https://rstudio.cloud/learn/primers/\nIntermediate: Geocomputation with R https://geocompr.robinlovelace.net/transport.html\nAdvanced: R for Data Science https://r4ds.had.co.nz/introduction.html"
   }
 ]
