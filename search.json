@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Course Title",
+    "title": "Introduction to R",
     "section": "",
-    "text": "Course info & details here"
+    "text": "This course provides a brief introduction to R, a statistical programming language for data science that is well suited to geographic data analysis and reproducible analysis and modelling to support evidence-based transport planning."
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Morning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
+    "text": "To take this course you must have recent versions of R and RStudio installed.\nSee here for instructions on how to install R on your computer: https://itsleeds.github.io/rrsrr/introduction.html#installing-r-and-rstudio\nPart 1: what R can do 1 hr\n\nPrerequisites: recap on what you need to use R for transport research (10 minutes)\nDemo of using R for transport research to show what’s possible (20 minutes)\nQuestions on how to use R for transport research (20 minutes)\n10 minute break and time to set-up R\n\nPart 2: shared practical session (30 minutes)\n\nWorking all together on R basics: https://itsleeds.github.io/rrsrr/basics.html (15 minutes)\nWorking all together on using RStudio: https://itsleeds.github.io/rrsrr/rstudio.html (10 minutes)\nBreak and questions (5 minutes)\n\nPart 3: breakout rooms (1 hr 20 minutes)\n\nUsing packages: https://itsleeds.github.io/rrsrr/pkgs.html around half an hour\nManipulating data: filtering and selecting data: https://itsleeds.github.io/rrsrr/data.html#tibbles around half an hour\n(Optional) spatial data: https://itsleeds.github.io/rrsrr/space.html\n\nPart 4: debrief (10 minutes)\n\nAdditional resources\nHow to get help"
   },
   {
     "objectID": "materials.html",
