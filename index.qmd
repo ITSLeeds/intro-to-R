@@ -1,5 +1,7 @@
 ---
-title: "Course Title"
+title: "Introduction to R"
 ---
 
-Course info & details here
+This course provides a brief introduction to R, a statistical programming language for data science that is well suited to geographic data analysis and reproducible analysis and modelling to support evidence-based transport planning.
+
+

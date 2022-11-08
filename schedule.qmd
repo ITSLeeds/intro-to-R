@@ -2,14 +2,35 @@
 title: "Schedule"
 ---
 
-Example schedule:
+## Prerequisites
 
-|     |                Morning              |          Afternoon                     |
-|:---:|:-----------------------------------:|:--------------------------------------:|
-|  L  | Intro + Data manipulation           | git / GitHub                           |
-|  M  | Generalised Linear Models           | Data visualisation                     |
-|  X  | Mixed models / GAM / Bayes          | Functional programming + Students work |
-|  J  | Multivariate analyses               | Reproducible workflows                 |
-|  V  | Using R as GIS + Students work      | Project presentations                  |
+To take this course you must have recent versions of R and RStudio installed.
+
+See here for instructions on how to install R on your computer: https://itsleeds.github.io/rrsrr/introduction.html#installing-r-and-rstudio
+
+
+Part 1: what R can do 1 hr
+
+- Prerequisites: recap on what you need to use R for transport research (10 minutes)
+- Demo of using R for transport research to show what's possible (20 minutes)
+- Questions on how to use R for transport research (20 minutes)
+- 10 minute break and time to set-up R
+
+Part 2: shared practical session (30 minutes)
+
+- Working all together on R basics: https://itsleeds.github.io/rrsrr/basics.html (15 minutes)
+- Working all together on using RStudio: https://itsleeds.github.io/rrsrr/rstudio.html (10 minutes)
+- Break and questions (5 minutes)
+
+Part 3: breakout rooms (1 hr 20 minutes)
+
+- Using packages: https://itsleeds.github.io/rrsrr/pkgs.html around half an hour
+- Manipulating data: filtering and selecting data: https://itsleeds.github.io/rrsrr/data.html#tibbles around half an hour
+- (Optional) spatial data: https://itsleeds.github.io/rrsrr/space.html 
+
+Part 4: debrief (10 minutes)
+
+- Additional resources
+- How to get help
 
 
