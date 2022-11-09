@@ -7,13 +7,6 @@
     "text": "Location\nThe lecture is located on Level 8 of the Worsley Building, which can be found on the campus map. As shown below, that is around a 10 minute walk from ITS. Ensure that you set-off on time, e.g. 08:30, to allow plenty of time to get lost, find the building, find the room and get set up before the lecture at 09:00.\n\nlibrary(osmextract)\nlibrary(tidyverse)\n\n\nwest_yorkshire = oe_get(place = \"West Yorkshire\", layer = \"multipolygons\")\nworsley_building = west_yorkshire %>%\n  filter(name == \"Worsley Building\")\nsf::write_sf(worsley_building, \"worsley_building.geojson\")\nwalking_route = stplanr::route(from = \"institute for transport studies leeds\",\n                               to = \"worsley building leeds\",\n                               route_fun = stplanr::route_osrm\n                               )\nsf::write_sf(walking_route, \"walking_route.geojson\")\n\n\nworsley_building = sf::read_sf(\"worsley_building.geojson\")\nwalking_route = sf::read_sf(\"walking_route.geojson\")\nlibrary(tmap)\ntmap_mode(\"view\")\n\ntmap mode set to interactive viewing\n\ntm_shape(walking_route) +\n  tm_lines(lwd = 5) +\n  tm_shape(worsley_building) +\n  tm_polygons() +\n  tm_view(set.zoom.limits = c(15, 17)) +\n  tm_basemap(server = leaflet::providers$OpenStreetMap)"
   },
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "To take this course you must have recent versions of R and RStudio installed.\nSee here for instructions on how to install R on your computer: https://itsleeds.github.io/rrsrr/introduction.html#installing-r-and-rstudio\nPart 1: what R can do 1 hr\n\nPrerequisites: recap on what you need to use R for transport research (10 minutes)\nDemo of using R for transport research to show what’s possible (20 minutes)\nQuestions on how to use R for transport research (20 minutes)\n10 minute break and time to set-up R\n\nPart 2: shared practical session (30 minutes)\n\nWorking all together on R basics: https://itsleeds.github.io/rrsrr/basics.html (15 minutes)\nWorking all together on using RStudio: https://itsleeds.github.io/rrsrr/rstudio.html (10 minutes)\nBreak and questions (5 minutes)\n\nPart 3: breakout rooms (1 hr 20 minutes)\n\nUsing packages: https://itsleeds.github.io/rrsrr/pkgs.html around half an hour\nManipulating data: filtering and selecting data: https://itsleeds.github.io/rrsrr/data.html#tibbles around half an hour\n(Optional) spatial data: https://itsleeds.github.io/rrsrr/space.html\n\nPart 4: debrief (10 minutes)\n\nAdditional resources\nHow to get help"
-  },
-  {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Course Materials",
@@ -21,45 +14,10 @@
     "text": "schedule\nslides\nReproducible Road Safety Research with R\nopenTransportDataDemo"
   },
   {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "An introduction to R",
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
     "section": "",
-    "text": "background-image: url(https://c1.staticflickr.com/2/1216/1096671706_571a263b63_b.jpg) background-position: 50% 50% class: center, bottom, inverse"
-  },
-  {
-    "objectID": "slides.html#set-up",
-    "href": "slides.html#set-up",
-    "title": "An introduction to R",
-    "section": "Set-up",
-    "text": "Set-up\nSee https://itsleeds.github.io/rrsrr/introduction.html#prerequisites"
-  },
-  {
-    "objectID": "slides.html#why-r",
-    "href": "slides.html#why-r",
-    "title": "An introduction to R",
-    "section": "Why R",
-    "text": "Why R\nGrowth + future proof: https://stackoverflow.blog/2017/10/10/impressive-growth-r/\nScalable: https://www.pct.bike/\n–"
-  },
-  {
-    "objectID": "slides.html#why-not-r",
-    "href": "slides.html#why-not-r",
-    "title": "An introduction to R",
-    "section": "Why not R?",
-    "text": "Why not R?\n\nTime to learn\nOther options are available"
-  },
-  {
-    "objectID": "slides.html#breakout-rooms",
-    "href": "slides.html#breakout-rooms",
-    "title": "An introduction to R",
-    "section": "Breakout rooms",
-    "text": "Breakout rooms\n\nSee https://github.com/ITSLeeds/rintro"
-  },
-  {
-    "objectID": "slides.html#further-resources",
-    "href": "slides.html#further-resources",
-    "title": "An introduction to R",
-    "section": "Further resources",
-    "text": "Further resources\n\nUse R’s internal help, e.g. ?plot\n\nBeginner: https://rstudio.cloud/learn/primers/\nIntermediate: Geocomputation with R https://geocompr.robinlovelace.net/transport.html\nAdvanced: R for Data Science https://r4ds.had.co.nz/introduction.html"
+    "text": "To take this course you must have recent versions of R and RStudio installed.\nSee here for instructions on how to install R on your computer: https://itsleeds.github.io/rrsrr/introduction.html#installing-r-and-rstudio\nPart 1: what R can do 1 hr\n\nPrerequisites: recap on what you need to use R for transport research (10 minutes)\nDemo of using R for transport research to show what’s possible (20 minutes)\nQuestions on how to use R for transport research (20 minutes)\n10 minute break and time to set-up R\n\nPart 2: shared practical session (30 minutes)\n\nWorking all together on R basics: https://itsleeds.github.io/rrsrr/basics.html (15 minutes)\nWorking all together on using RStudio: https://itsleeds.github.io/rrsrr/rstudio.html (10 minutes)\nBreak and questions (5 minutes)\n\nPart 3: breakout rooms (1 hr 20 minutes)\n\nUsing packages: https://itsleeds.github.io/rrsrr/pkgs.html around half an hour\nManipulating data: filtering and selecting data: https://itsleeds.github.io/rrsrr/data.html#tibbles around half an hour\n(Optional) spatial data: https://itsleeds.github.io/rrsrr/space.html\n\nPart 4: debrief (10 minutes)\n\nAdditional resources\nHow to get help"
   }
 ]
