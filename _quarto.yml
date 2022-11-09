@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!slides/"
 
 website:
   title: "Course Title"
@@ -32,4 +35,3 @@ format:
 
 execute:
   freeze: auto
-
