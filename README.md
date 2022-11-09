@@ -1,4 +1,11 @@
-# quarto-course-website-template
+# An Introduction to R
+
+3 hour course, see course website https://itsleeds.github.io/intro-to-R/ for details.
+
+
+## Background
+
+This was based on previous work.
 
 A template for course websites developed with Quarto and hosted on GitHub
 
