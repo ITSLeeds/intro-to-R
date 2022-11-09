@@ -6,7 +6,7 @@ This course provides a brief introduction to R, a statistical programming langua
 
 # Location
 
-The lecture is located on Level 8 of the Worsley Building.
+The lecture is located on Level 8 of the Worsley Building, which can be found on the [campus map](https://www.leeds.ac.uk/campusmap).
 As shown below, that is around a 10 minute walk from ITS.
 Ensure that you set-off on time, e.g. 08:30, to allow plenty of time to get lost, find the building, find the room and get set up before the lecture at 09:00.
 
