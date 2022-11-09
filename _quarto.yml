@@ -4,9 +4,10 @@ project:
   render:
     - "*.qmd"
     - "!slides/"
+    - "!slides.qmd"
 
 website:
-  title: "Course Title"
+  title: "An Introduction to R"
   sidebar:
     background: primary
     # logo: "images/logo.png"
