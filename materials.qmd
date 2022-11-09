@@ -3,7 +3,7 @@ title: "Course Materials"
 ---
 
 - [schedule](schedule.html)
-- [slides](slides.html)
+- [slides](https://rpubs.com/RobinLovelace/967982)
 - [Reproducible Road Safety Research with R](https://itsleeds.github.io/rrsrr/basics.html)
 - [openTransportDataDemo](https://github.com/Robinlovelace/openTransportDataDemo)
 
