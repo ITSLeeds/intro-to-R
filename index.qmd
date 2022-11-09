@@ -54,11 +54,3 @@ nearby_buildings = west_yorkshire[worsley_surroundings_500m, , op = sf::st_withi
 
 ```
 
-```{r}
-#| echo: false
-rmarkdown::render("slides.Rmd")
-browseURL("slides.html")
-dir.create("slides")
-file.copy("docs/slides.html", "slides/index.html")
-```
-
