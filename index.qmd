@@ -4,4 +4,53 @@ title: "Introduction to R"
 
 This course provides a brief introduction to R, a statistical programming language for data science that is well suited to geographic data analysis and reproducible analysis and modelling to support evidence-based transport planning.
 
+# Location
+
+The lecture is located on Level 8 of the Worsley Building.
+As shown below, that is around a 10 minute walk from ITS.
+Ensure that you set-off on time, e.g. 08:30, to allow plenty of time to get lost, find the building, find the room and get set up before the lecture at 09:00.
+
+```{r}
+#| message: false
+library(osmextract)
+library(tidyverse)
+```
+
+
+```{r}
+#| eval: false
+west_yorkshire = oe_get(place = "West Yorkshire", layer = "multipolygons")
+worsley_building = west_yorkshire %>%
+  filter(name == "Worsley Building")
+sf::write_sf(worsley_building, "worsley_building.geojson")
+walking_route = stplanr::route(from = "institute for transport studies leeds",
+                               to = "worsley building leeds",
+                               route_fun = stplanr::route_osrm
+                               )
+sf::write_sf(walking_route, "walking_route.geojson")
+```
+
+```{r}
+worsley_building = sf::read_sf("worsley_building.geojson")
+walking_route = sf::read_sf("walking_route.geojson")
+library(tmap)
+tmap_mode("view")
+tm_shape(walking_route) +
+  tm_lines(lwd = 5) +
+  tm_shape(worsley_building) +
+  tm_polygons() +
+  tm_view(set.zoom.limits = c(15, 17)) +
+  tm_basemap(server = leaflet::providers$OpenStreetMap)
+```
+
+```{r}
+#| eval: false
+#| echo: false
+
+sf::sf_use_s2(TRUE)
+worsley_surroundings_500m = sf::st_buffer(worsley_building, dist = 1000)
+sf::sf_use_s2(FALSE)
+nearby_buildings = west_yorkshire[worsley_surroundings_500m, , op = sf::st_within]
+
+```
 
